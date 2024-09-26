@@ -1,0 +1,17 @@
+/Write an appropriate function call//
+Date-25/9/2024
+#include<stdio.h>
+void display (int a,int b);
+main()
+{
+int a,b,sqrt;
+printf("enter the value of a and b");
+sqrt=display(int a,int b);
+return 0;
+}
+void display (int a,int b);
+{
+int c;
+c=sqrt(a*a+b*b);
+printf("c=%d \n",c);
+}
