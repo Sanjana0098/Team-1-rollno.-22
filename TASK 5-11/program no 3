@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+// Define the union for memory-efficient storage
+union StudentData {
+    char grade;
+    int student_id;
+    float cgpa;
+};
+
+int main() {
+    union StudentData data;
+
+    // Store and display a character (grade)
+    data.grade = 'A';
+    printf("Stored Grade: %c\n", data.grade);
+
+    // Store and display an integer (student ID)
+    data.student_id = 12345;
+    printf("Stored Student ID: %d\n", data.student_id);
+
+    // Store and display a float (CGPA)
+    data.cgpa = 8.75;
+    printf("Stored CGPA: %.2f\n", data.cgpa);
+
+    return 0;
+}
+
